@@ -33,12 +33,12 @@
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.productPan = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.createorderPan = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.dashPan = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.createorderPan = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.productPan = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.inventoryPan = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.employeePan = new System.Windows.Forms.Panel();
@@ -53,9 +53,9 @@
             this.button9 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.productPan.SuspendLayout();
-            this.createorderPan.SuspendLayout();
             this.dashPan.SuspendLayout();
+            this.createorderPan.SuspendLayout();
+            this.productPan.SuspendLayout();
             this.inventoryPan.SuspendLayout();
             this.employeePan.SuspendLayout();
             this.userPan.SuspendLayout();
@@ -72,7 +72,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(821, 35);
+            this.panel1.Size = new System.Drawing.Size(978, 35);
             this.panel1.TabIndex = 0;
             // 
             // nightControlBox1
@@ -90,7 +90,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(682, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(839, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -129,32 +129,32 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 498);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // productPan
+            // dashPan
             // 
-            this.productPan.Controls.Add(this.button3);
-            this.productPan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productPan.Location = new System.Drawing.Point(3, 97);
-            this.productPan.Name = "productPan";
-            this.productPan.Size = new System.Drawing.Size(171, 41);
-            this.productPan.TabIndex = 5;
+            this.dashPan.Controls.Add(this.button2);
+            this.dashPan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashPan.Location = new System.Drawing.Point(3, 3);
+            this.dashPan.Name = "dashPan";
+            this.dashPan.Size = new System.Drawing.Size(171, 41);
+            this.dashPan.TabIndex = 6;
             // 
-            // button3
+            // button2
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-9, -27);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(187, 98);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "   Products";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(-9, -27);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(187, 98);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "   Dashboard";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // createorderPan
             // 
@@ -183,32 +183,32 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // dashPan
+            // productPan
             // 
-            this.dashPan.Controls.Add(this.button2);
-            this.dashPan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashPan.Location = new System.Drawing.Point(3, 3);
-            this.dashPan.Name = "dashPan";
-            this.dashPan.Size = new System.Drawing.Size(171, 41);
-            this.dashPan.TabIndex = 6;
+            this.productPan.Controls.Add(this.button3);
+            this.productPan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productPan.Location = new System.Drawing.Point(3, 97);
+            this.productPan.Name = "productPan";
+            this.productPan.Size = new System.Drawing.Size(171, 41);
+            this.productPan.TabIndex = 5;
             // 
-            // button2
+            // button3
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-9, -27);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(187, 98);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "   Dashboard";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(-9, -27);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(187, 98);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "   Products";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // inventoryPan
             // 
@@ -375,21 +375,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 533);
+            this.ClientSize = new System.Drawing.Size(978, 533);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "    ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.productPan.ResumeLayout(false);
-            this.createorderPan.ResumeLayout(false);
             this.dashPan.ResumeLayout(false);
+            this.createorderPan.ResumeLayout(false);
+            this.productPan.ResumeLayout(false);
             this.inventoryPan.ResumeLayout(false);
             this.employeePan.ResumeLayout(false);
             this.userPan.ResumeLayout(false);

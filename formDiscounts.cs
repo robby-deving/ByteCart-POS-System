@@ -16,5 +16,15 @@ namespace POS_System
         {
             InitializeComponent();
         }
+
+        private void formDiscounts_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
