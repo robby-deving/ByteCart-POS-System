@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace POS_System
 {
     public partial class Form1 : Form
     {
+        private const string connectionString = "Server=localhost;Database=pos;Uid=root;Pwd=robert;";
+
         formDashboard dashboard;
         formCreateOrder createOrder;
         formProducts products;
@@ -20,33 +25,13 @@ namespace POS_System
         fromUsers users;
         formDiscounts discounts;
         formLoyaltyPrograms loyaltyPrograms;
+        logs logs;
 
         public Form1()
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.IsMdiContainer = true;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
+        private void ShowDashboard()
         {
             if (dashboard == null)
             {
@@ -60,6 +45,33 @@ namespace POS_System
             {
                 dashboard.Activate();
             }
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.IsMdiContainer = true;
+            ShowDashboard();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ShowDashboard();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            ShowDashboard();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -213,5 +225,41 @@ namespace POS_System
         {
             loyaltyPrograms = null;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            login loginForm = new login();
+            loginForm.FormClosed += (s, args) => this.Close(); 
+            loginForm.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            if (logs == null)
+            {
+                logs = new logs();
+                logs.FormClosed += Logs_FormClosed;
+                logs.MdiParent = this;
+                logs.Dock = DockStyle.Fill;
+                logs.Show();
+            }
+            else
+            {
+                logs.Activate();
+            }
+        }
+
+        private void Logs_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            logs = null;
+        }
+
     }
 }

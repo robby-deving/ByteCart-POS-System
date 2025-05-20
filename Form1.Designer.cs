@@ -51,6 +51,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.logoutPan = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.dashPan.SuspendLayout();
@@ -90,7 +92,7 @@
             this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
             this.nightControlBox1.EnableMinimizeButton = true;
             this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(839, 0);
+            this.nightControlBox1.Location = new System.Drawing.Point(874, 0);
             this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
             this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -123,6 +125,7 @@
             this.flowLayoutPanel1.Controls.Add(this.discountPan);
             this.flowLayoutPanel1.Controls.Add(this.lpPan);
             this.flowLayoutPanel1.Controls.Add(this.logoutPan);
+            this.flowLayoutPanel1.Controls.Add(this.button11);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 35);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -150,7 +153,7 @@
             this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(187, 98);
             this.button2.TabIndex = 2;
-            this.button2.Text = "   Dashboard";
+            this.button2.Text = "   Transactions";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
@@ -285,7 +288,7 @@
             this.button6.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(187, 98);
             this.button6.TabIndex = 2;
-            this.button6.Text = "   Users";
+            this.button6.Text = "   Customers";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button6.UseVisualStyleBackColor = false;
@@ -320,6 +323,7 @@
             // 
             // lpPan
             // 
+            this.lpPan.Controls.Add(this.button10);
             this.lpPan.Controls.Add(this.button8);
             this.lpPan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lpPan.Location = new System.Drawing.Point(3, 332);
@@ -370,6 +374,41 @@
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.button10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.Location = new System.Drawing.Point(-8, -29);
+            this.button10.Name = "button10";
+            this.button10.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button10.Size = new System.Drawing.Size(187, 98);
+            this.button10.TabIndex = 3;
+            this.button10.Text = "   Loyalty Programs";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.button11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.Location = new System.Drawing.Point(3, 426);
+            this.button11.Name = "button11";
+            this.button11.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button11.Size = new System.Drawing.Size(191, 33);
+            this.button11.TabIndex = 4;
+            this.button11.Text = "   System Logs";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // Form1
             // 
@@ -424,6 +463,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel logoutPan;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
     }
 }
 

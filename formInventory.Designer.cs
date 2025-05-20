@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.materialMaskedTextBox1 = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.materialMaskedTextBox2 = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
+            this.productTxt = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
+            this.quantityTxt = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -47,89 +49,87 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Inventories";
             // 
-            // materialMaskedTextBox1
+            // productTxt
             // 
-            this.materialMaskedTextBox1.AllowPromptAsInput = true;
-            this.materialMaskedTextBox1.AnimateReadOnly = false;
-            this.materialMaskedTextBox1.AsciiOnly = false;
-            this.materialMaskedTextBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMaskedTextBox1.BeepOnError = false;
-            this.materialMaskedTextBox1.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox1.Depth = 0;
-            this.materialMaskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMaskedTextBox1.HidePromptOnLeave = false;
-            this.materialMaskedTextBox1.HideSelection = true;
-            this.materialMaskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.materialMaskedTextBox1.LeadingIcon = null;
-            this.materialMaskedTextBox1.Location = new System.Drawing.Point(21, 92);
-            this.materialMaskedTextBox1.Mask = "";
-            this.materialMaskedTextBox1.MaxLength = 32767;
-            this.materialMaskedTextBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialMaskedTextBox1.Name = "materialMaskedTextBox1";
-            this.materialMaskedTextBox1.PasswordChar = '\0';
-            this.materialMaskedTextBox1.PrefixSuffixText = null;
-            this.materialMaskedTextBox1.PromptChar = '_';
-            this.materialMaskedTextBox1.ReadOnly = false;
-            this.materialMaskedTextBox1.RejectInputOnFirstFailure = false;
-            this.materialMaskedTextBox1.ResetOnPrompt = true;
-            this.materialMaskedTextBox1.ResetOnSpace = true;
-            this.materialMaskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialMaskedTextBox1.SelectedText = "";
-            this.materialMaskedTextBox1.SelectionLength = 0;
-            this.materialMaskedTextBox1.SelectionStart = 0;
-            this.materialMaskedTextBox1.ShortcutsEnabled = true;
-            this.materialMaskedTextBox1.Size = new System.Drawing.Size(143, 48);
-            this.materialMaskedTextBox1.SkipLiterals = true;
-            this.materialMaskedTextBox1.TabIndex = 11;
-            this.materialMaskedTextBox1.TabStop = false;
-            this.materialMaskedTextBox1.Text = "eg. 1";
-            this.materialMaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMaskedTextBox1.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox1.TrailingIcon = null;
-            this.materialMaskedTextBox1.UseSystemPasswordChar = false;
-            this.materialMaskedTextBox1.ValidatingType = null;
+            this.productTxt.AllowPromptAsInput = true;
+            this.productTxt.AnimateReadOnly = false;
+            this.productTxt.AsciiOnly = false;
+            this.productTxt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.productTxt.BeepOnError = false;
+            this.productTxt.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.productTxt.Depth = 0;
+            this.productTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.productTxt.HidePromptOnLeave = false;
+            this.productTxt.HideSelection = true;
+            this.productTxt.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.productTxt.LeadingIcon = null;
+            this.productTxt.Location = new System.Drawing.Point(21, 92);
+            this.productTxt.Mask = "";
+            this.productTxt.MaxLength = 32767;
+            this.productTxt.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.productTxt.Name = "productTxt";
+            this.productTxt.PasswordChar = '\0';
+            this.productTxt.PrefixSuffixText = null;
+            this.productTxt.PromptChar = '_';
+            this.productTxt.ReadOnly = false;
+            this.productTxt.RejectInputOnFirstFailure = false;
+            this.productTxt.ResetOnPrompt = true;
+            this.productTxt.ResetOnSpace = true;
+            this.productTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.productTxt.SelectedText = "";
+            this.productTxt.SelectionLength = 0;
+            this.productTxt.SelectionStart = 0;
+            this.productTxt.ShortcutsEnabled = true;
+            this.productTxt.Size = new System.Drawing.Size(143, 48);
+            this.productTxt.SkipLiterals = true;
+            this.productTxt.TabIndex = 11;
+            this.productTxt.TabStop = false;
+            this.productTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.productTxt.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.productTxt.TrailingIcon = null;
+            this.productTxt.UseSystemPasswordChar = false;
+            this.productTxt.ValidatingType = null;
             // 
-            // materialMaskedTextBox2
+            // quantityTxt
             // 
-            this.materialMaskedTextBox2.AllowPromptAsInput = true;
-            this.materialMaskedTextBox2.AnimateReadOnly = false;
-            this.materialMaskedTextBox2.AsciiOnly = false;
-            this.materialMaskedTextBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMaskedTextBox2.BeepOnError = false;
-            this.materialMaskedTextBox2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox2.Depth = 0;
-            this.materialMaskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMaskedTextBox2.HidePromptOnLeave = false;
-            this.materialMaskedTextBox2.HideSelection = true;
-            this.materialMaskedTextBox2.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.materialMaskedTextBox2.LeadingIcon = null;
-            this.materialMaskedTextBox2.Location = new System.Drawing.Point(217, 92);
-            this.materialMaskedTextBox2.Mask = "";
-            this.materialMaskedTextBox2.MaxLength = 32767;
-            this.materialMaskedTextBox2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialMaskedTextBox2.Name = "materialMaskedTextBox2";
-            this.materialMaskedTextBox2.PasswordChar = '\0';
-            this.materialMaskedTextBox2.PrefixSuffixText = null;
-            this.materialMaskedTextBox2.PromptChar = '_';
-            this.materialMaskedTextBox2.ReadOnly = false;
-            this.materialMaskedTextBox2.RejectInputOnFirstFailure = false;
-            this.materialMaskedTextBox2.ResetOnPrompt = true;
-            this.materialMaskedTextBox2.ResetOnSpace = true;
-            this.materialMaskedTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialMaskedTextBox2.SelectedText = "";
-            this.materialMaskedTextBox2.SelectionLength = 0;
-            this.materialMaskedTextBox2.SelectionStart = 0;
-            this.materialMaskedTextBox2.ShortcutsEnabled = true;
-            this.materialMaskedTextBox2.Size = new System.Drawing.Size(140, 48);
-            this.materialMaskedTextBox2.SkipLiterals = true;
-            this.materialMaskedTextBox2.TabIndex = 12;
-            this.materialMaskedTextBox2.TabStop = false;
-            this.materialMaskedTextBox2.Text = "eg.  10";
-            this.materialMaskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMaskedTextBox2.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox2.TrailingIcon = null;
-            this.materialMaskedTextBox2.UseSystemPasswordChar = false;
-            this.materialMaskedTextBox2.ValidatingType = null;
+            this.quantityTxt.AllowPromptAsInput = true;
+            this.quantityTxt.AnimateReadOnly = false;
+            this.quantityTxt.AsciiOnly = false;
+            this.quantityTxt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.quantityTxt.BeepOnError = false;
+            this.quantityTxt.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.quantityTxt.Depth = 0;
+            this.quantityTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.quantityTxt.HidePromptOnLeave = false;
+            this.quantityTxt.HideSelection = true;
+            this.quantityTxt.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.quantityTxt.LeadingIcon = null;
+            this.quantityTxt.Location = new System.Drawing.Point(217, 92);
+            this.quantityTxt.Mask = "";
+            this.quantityTxt.MaxLength = 32767;
+            this.quantityTxt.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.quantityTxt.Name = "quantityTxt";
+            this.quantityTxt.PasswordChar = '\0';
+            this.quantityTxt.PrefixSuffixText = null;
+            this.quantityTxt.PromptChar = '_';
+            this.quantityTxt.ReadOnly = false;
+            this.quantityTxt.RejectInputOnFirstFailure = false;
+            this.quantityTxt.ResetOnPrompt = true;
+            this.quantityTxt.ResetOnSpace = true;
+            this.quantityTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.quantityTxt.SelectedText = "";
+            this.quantityTxt.SelectionLength = 0;
+            this.quantityTxt.SelectionStart = 0;
+            this.quantityTxt.ShortcutsEnabled = true;
+            this.quantityTxt.Size = new System.Drawing.Size(140, 48);
+            this.quantityTxt.SkipLiterals = true;
+            this.quantityTxt.TabIndex = 12;
+            this.quantityTxt.TabStop = false;
+            this.quantityTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.quantityTxt.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.quantityTxt.TrailingIcon = null;
+            this.quantityTxt.UseSystemPasswordChar = false;
+            this.quantityTxt.ValidatingType = null;
             // 
             // button1
             // 
@@ -142,6 +142,7 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -164,21 +165,33 @@
             this.label3.TabIndex = 16;
             this.label3.Text = "Quantity";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(21, 206);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(749, 180);
+            this.dataGridView1.TabIndex = 27;
+            // 
             // formInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.materialMaskedTextBox2);
-            this.Controls.Add(this.materialMaskedTextBox1);
+            this.Controls.Add(this.quantityTxt);
+            this.Controls.Add(this.productTxt);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formInventory";
             this.Text = "formInventory";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,10 +200,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox materialMaskedTextBox1;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox materialMaskedTextBox2;
+        private ReaLTaiizor.Controls.MaterialMaskedTextBox productTxt;
+        private ReaLTaiizor.Controls.MaterialMaskedTextBox quantityTxt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

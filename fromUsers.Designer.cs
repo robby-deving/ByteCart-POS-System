@@ -33,9 +33,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.materialMaskedTextBox4 = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.materialMaskedTextBox3 = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            this.materialMaskedTextBox1 = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
+            this.phoneTxt = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
+            this.emailTxt = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
+            this.nameTxt = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -60,6 +62,7 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -91,131 +94,138 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Name";
             // 
-            // materialMaskedTextBox4
+            // phoneTxt
             // 
-            this.materialMaskedTextBox4.AllowPromptAsInput = true;
-            this.materialMaskedTextBox4.AnimateReadOnly = false;
-            this.materialMaskedTextBox4.AsciiOnly = false;
-            this.materialMaskedTextBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMaskedTextBox4.BeepOnError = false;
-            this.materialMaskedTextBox4.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox4.Depth = 0;
-            this.materialMaskedTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMaskedTextBox4.HidePromptOnLeave = false;
-            this.materialMaskedTextBox4.HideSelection = true;
-            this.materialMaskedTextBox4.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.materialMaskedTextBox4.LeadingIcon = null;
-            this.materialMaskedTextBox4.Location = new System.Drawing.Point(416, 94);
-            this.materialMaskedTextBox4.Mask = "";
-            this.materialMaskedTextBox4.MaxLength = 32767;
-            this.materialMaskedTextBox4.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialMaskedTextBox4.Name = "materialMaskedTextBox4";
-            this.materialMaskedTextBox4.PasswordChar = '\0';
-            this.materialMaskedTextBox4.PrefixSuffixText = null;
-            this.materialMaskedTextBox4.PromptChar = '_';
-            this.materialMaskedTextBox4.ReadOnly = false;
-            this.materialMaskedTextBox4.RejectInputOnFirstFailure = false;
-            this.materialMaskedTextBox4.ResetOnPrompt = true;
-            this.materialMaskedTextBox4.ResetOnSpace = true;
-            this.materialMaskedTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialMaskedTextBox4.SelectedText = "";
-            this.materialMaskedTextBox4.SelectionLength = 0;
-            this.materialMaskedTextBox4.SelectionStart = 0;
-            this.materialMaskedTextBox4.ShortcutsEnabled = true;
-            this.materialMaskedTextBox4.Size = new System.Drawing.Size(180, 48);
-            this.materialMaskedTextBox4.SkipLiterals = true;
-            this.materialMaskedTextBox4.TabIndex = 14;
-            this.materialMaskedTextBox4.TabStop = false;
-            this.materialMaskedTextBox4.Text = "eg. 0987654321";
-            this.materialMaskedTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMaskedTextBox4.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox4.TrailingIcon = null;
-            this.materialMaskedTextBox4.UseSystemPasswordChar = false;
-            this.materialMaskedTextBox4.ValidatingType = null;
+            this.phoneTxt.AllowPromptAsInput = true;
+            this.phoneTxt.AnimateReadOnly = false;
+            this.phoneTxt.AsciiOnly = false;
+            this.phoneTxt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.phoneTxt.BeepOnError = false;
+            this.phoneTxt.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.phoneTxt.Depth = 0;
+            this.phoneTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.phoneTxt.HidePromptOnLeave = false;
+            this.phoneTxt.HideSelection = true;
+            this.phoneTxt.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.phoneTxt.LeadingIcon = null;
+            this.phoneTxt.Location = new System.Drawing.Point(416, 94);
+            this.phoneTxt.Mask = "";
+            this.phoneTxt.MaxLength = 32767;
+            this.phoneTxt.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.phoneTxt.Name = "phoneTxt";
+            this.phoneTxt.PasswordChar = '\0';
+            this.phoneTxt.PrefixSuffixText = null;
+            this.phoneTxt.PromptChar = '_';
+            this.phoneTxt.ReadOnly = false;
+            this.phoneTxt.RejectInputOnFirstFailure = false;
+            this.phoneTxt.ResetOnPrompt = true;
+            this.phoneTxt.ResetOnSpace = true;
+            this.phoneTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.phoneTxt.SelectedText = "";
+            this.phoneTxt.SelectionLength = 0;
+            this.phoneTxt.SelectionStart = 0;
+            this.phoneTxt.ShortcutsEnabled = true;
+            this.phoneTxt.Size = new System.Drawing.Size(180, 48);
+            this.phoneTxt.SkipLiterals = true;
+            this.phoneTxt.TabIndex = 14;
+            this.phoneTxt.TabStop = false;
+            this.phoneTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.phoneTxt.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.phoneTxt.TrailingIcon = null;
+            this.phoneTxt.UseSystemPasswordChar = false;
+            this.phoneTxt.ValidatingType = null;
             // 
-            // materialMaskedTextBox3
+            // emailTxt
             // 
-            this.materialMaskedTextBox3.AllowPromptAsInput = true;
-            this.materialMaskedTextBox3.AnimateReadOnly = false;
-            this.materialMaskedTextBox3.AsciiOnly = false;
-            this.materialMaskedTextBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMaskedTextBox3.BeepOnError = false;
-            this.materialMaskedTextBox3.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox3.Depth = 0;
-            this.materialMaskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMaskedTextBox3.HidePromptOnLeave = false;
-            this.materialMaskedTextBox3.HideSelection = true;
-            this.materialMaskedTextBox3.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.materialMaskedTextBox3.LeadingIcon = null;
-            this.materialMaskedTextBox3.Location = new System.Drawing.Point(210, 94);
-            this.materialMaskedTextBox3.Mask = "";
-            this.materialMaskedTextBox3.MaxLength = 32767;
-            this.materialMaskedTextBox3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialMaskedTextBox3.Name = "materialMaskedTextBox3";
-            this.materialMaskedTextBox3.PasswordChar = '\0';
-            this.materialMaskedTextBox3.PrefixSuffixText = null;
-            this.materialMaskedTextBox3.PromptChar = '_';
-            this.materialMaskedTextBox3.ReadOnly = false;
-            this.materialMaskedTextBox3.RejectInputOnFirstFailure = false;
-            this.materialMaskedTextBox3.ResetOnPrompt = true;
-            this.materialMaskedTextBox3.ResetOnSpace = true;
-            this.materialMaskedTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialMaskedTextBox3.SelectedText = "";
-            this.materialMaskedTextBox3.SelectionLength = 0;
-            this.materialMaskedTextBox3.SelectionStart = 0;
-            this.materialMaskedTextBox3.ShortcutsEnabled = true;
-            this.materialMaskedTextBox3.Size = new System.Drawing.Size(155, 48);
-            this.materialMaskedTextBox3.SkipLiterals = true;
-            this.materialMaskedTextBox3.TabIndex = 13;
-            this.materialMaskedTextBox3.TabStop = false;
-            this.materialMaskedTextBox3.Text = "eg. hello@gmail";
-            this.materialMaskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMaskedTextBox3.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox3.TrailingIcon = null;
-            this.materialMaskedTextBox3.UseSystemPasswordChar = false;
-            this.materialMaskedTextBox3.ValidatingType = null;
+            this.emailTxt.AllowPromptAsInput = true;
+            this.emailTxt.AnimateReadOnly = false;
+            this.emailTxt.AsciiOnly = false;
+            this.emailTxt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.emailTxt.BeepOnError = false;
+            this.emailTxt.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.emailTxt.Depth = 0;
+            this.emailTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.emailTxt.HidePromptOnLeave = false;
+            this.emailTxt.HideSelection = true;
+            this.emailTxt.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.emailTxt.LeadingIcon = null;
+            this.emailTxt.Location = new System.Drawing.Point(210, 94);
+            this.emailTxt.Mask = "";
+            this.emailTxt.MaxLength = 32767;
+            this.emailTxt.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.emailTxt.Name = "emailTxt";
+            this.emailTxt.PasswordChar = '\0';
+            this.emailTxt.PrefixSuffixText = null;
+            this.emailTxt.PromptChar = '_';
+            this.emailTxt.ReadOnly = false;
+            this.emailTxt.RejectInputOnFirstFailure = false;
+            this.emailTxt.ResetOnPrompt = true;
+            this.emailTxt.ResetOnSpace = true;
+            this.emailTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.emailTxt.SelectedText = "";
+            this.emailTxt.SelectionLength = 0;
+            this.emailTxt.SelectionStart = 0;
+            this.emailTxt.ShortcutsEnabled = true;
+            this.emailTxt.Size = new System.Drawing.Size(155, 48);
+            this.emailTxt.SkipLiterals = true;
+            this.emailTxt.TabIndex = 13;
+            this.emailTxt.TabStop = false;
+            this.emailTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.emailTxt.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.emailTxt.TrailingIcon = null;
+            this.emailTxt.UseSystemPasswordChar = false;
+            this.emailTxt.ValidatingType = null;
             // 
-            // materialMaskedTextBox1
+            // nameTxt
             // 
-            this.materialMaskedTextBox1.AllowPromptAsInput = true;
-            this.materialMaskedTextBox1.AnimateReadOnly = false;
-            this.materialMaskedTextBox1.AsciiOnly = false;
-            this.materialMaskedTextBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMaskedTextBox1.BeepOnError = false;
-            this.materialMaskedTextBox1.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox1.Depth = 0;
-            this.materialMaskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialMaskedTextBox1.HidePromptOnLeave = false;
-            this.materialMaskedTextBox1.HideSelection = true;
-            this.materialMaskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.materialMaskedTextBox1.LeadingIcon = null;
-            this.materialMaskedTextBox1.Location = new System.Drawing.Point(25, 94);
-            this.materialMaskedTextBox1.Mask = "";
-            this.materialMaskedTextBox1.MaxLength = 32767;
-            this.materialMaskedTextBox1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            this.materialMaskedTextBox1.Name = "materialMaskedTextBox1";
-            this.materialMaskedTextBox1.PasswordChar = '\0';
-            this.materialMaskedTextBox1.PrefixSuffixText = null;
-            this.materialMaskedTextBox1.PromptChar = '_';
-            this.materialMaskedTextBox1.ReadOnly = false;
-            this.materialMaskedTextBox1.RejectInputOnFirstFailure = false;
-            this.materialMaskedTextBox1.ResetOnPrompt = true;
-            this.materialMaskedTextBox1.ResetOnSpace = true;
-            this.materialMaskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialMaskedTextBox1.SelectedText = "";
-            this.materialMaskedTextBox1.SelectionLength = 0;
-            this.materialMaskedTextBox1.SelectionStart = 0;
-            this.materialMaskedTextBox1.ShortcutsEnabled = true;
-            this.materialMaskedTextBox1.Size = new System.Drawing.Size(143, 48);
-            this.materialMaskedTextBox1.SkipLiterals = true;
-            this.materialMaskedTextBox1.TabIndex = 11;
-            this.materialMaskedTextBox1.TabStop = false;
-            this.materialMaskedTextBox1.Text = "eg. John Doe";
-            this.materialMaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMaskedTextBox1.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.materialMaskedTextBox1.TrailingIcon = null;
-            this.materialMaskedTextBox1.UseSystemPasswordChar = false;
-            this.materialMaskedTextBox1.ValidatingType = null;
+            this.nameTxt.AllowPromptAsInput = true;
+            this.nameTxt.AnimateReadOnly = false;
+            this.nameTxt.AsciiOnly = false;
+            this.nameTxt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.nameTxt.BeepOnError = false;
+            this.nameTxt.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.nameTxt.Depth = 0;
+            this.nameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.nameTxt.HidePromptOnLeave = false;
+            this.nameTxt.HideSelection = true;
+            this.nameTxt.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.nameTxt.LeadingIcon = null;
+            this.nameTxt.Location = new System.Drawing.Point(25, 94);
+            this.nameTxt.Mask = "";
+            this.nameTxt.MaxLength = 32767;
+            this.nameTxt.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            this.nameTxt.Name = "nameTxt";
+            this.nameTxt.PasswordChar = '\0';
+            this.nameTxt.PrefixSuffixText = null;
+            this.nameTxt.PromptChar = '_';
+            this.nameTxt.ReadOnly = false;
+            this.nameTxt.RejectInputOnFirstFailure = false;
+            this.nameTxt.ResetOnPrompt = true;
+            this.nameTxt.ResetOnSpace = true;
+            this.nameTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.nameTxt.SelectedText = "";
+            this.nameTxt.SelectionLength = 0;
+            this.nameTxt.SelectionStart = 0;
+            this.nameTxt.ShortcutsEnabled = true;
+            this.nameTxt.Size = new System.Drawing.Size(143, 48);
+            this.nameTxt.SkipLiterals = true;
+            this.nameTxt.TabIndex = 11;
+            this.nameTxt.TabStop = false;
+            this.nameTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.nameTxt.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.nameTxt.TrailingIcon = null;
+            this.nameTxt.UseSystemPasswordChar = false;
+            this.nameTxt.ValidatingType = null;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(20, 218);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(749, 180);
+            this.dataGridView1.TabIndex = 28;
             // 
             // fromUsers
             // 
@@ -223,17 +233,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.materialMaskedTextBox4);
-            this.Controls.Add(this.materialMaskedTextBox3);
-            this.Controls.Add(this.materialMaskedTextBox1);
+            this.Controls.Add(this.phoneTxt);
+            this.Controls.Add(this.emailTxt);
+            this.Controls.Add(this.nameTxt);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fromUsers";
             this.Text = "fromUsers";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,8 +258,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox materialMaskedTextBox4;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox materialMaskedTextBox3;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox materialMaskedTextBox1;
+        private ReaLTaiizor.Controls.MaterialMaskedTextBox phoneTxt;
+        private ReaLTaiizor.Controls.MaterialMaskedTextBox emailTxt;
+        private ReaLTaiizor.Controls.MaterialMaskedTextBox nameTxt;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
